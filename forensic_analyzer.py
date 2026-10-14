@@ -138,7 +138,7 @@ def run_crypto_audit():
 
     if not os.path.exists("linux_x86.bin") or not os.path.exists("windows_arm.bin"):
         print("[-] Error: Binary dump files ('linux_x86.bin' or 'windows_arm.bin') not found!")
-        print("[-] Please run 'generate_keys.py' first to produce dataset samples.")
+        print("[-] Please run 'generator.py' first to produce dataset samples.")
         sys.exit(1)
 
     with open("linux_x86.bin", "rb") as f:
